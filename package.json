@@ -1,0 +1,15 @@
+{
+  "name": "decision-compass",
+  "private": true,
+  "packageManager": "pnpm@10.30.3",
+  "engines": { "node": ">=22" },
+  "pnpm": { "onlyBuiltDependencies": ["esbuild"] },
+  "repository": { "type": "git", "url": "git+https://github.com/freeappstore-online/decision-compass.git" },
+  "scripts": {
+    "dev": "pnpm --filter @decision-compass/web dev",
+    "build": "pnpm --filter @decision-compass/web build",
+    "preview": "pnpm --filter @decision-compass/web preview",
+    "typecheck": "pnpm --filter @decision-compass/web exec tsc -b",
+    "test": "pnpm --filter @decision-compass/web exec tsc -b"
+  }
+}
